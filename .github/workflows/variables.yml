@@ -44,7 +44,7 @@ jobs:
         run: echo "this job runs if a workflow is cancelled"
         
   test_variables:
-     if: (github.event_name == 'pull+request')
+     if: (github.event_name == 'pull_request')
      env:
         JOB_VAR: "Job level variable"
      name: job to test variables
